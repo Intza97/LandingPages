@@ -1,0 +1,207 @@
+/*Media query 1200px*/
+
+@media screen and (max-width: 1200px) {
+  /*HEADER - MENU*/
+  .container__header,
+  .about {
+    max-width: 960px;
+  }
+
+  .menu nav {
+    margin: 0px 4px;
+  }
+
+  .menu nav ul li {
+    margin: 0px 8px;
+  }
+
+  .menu nav ul li a {
+    font-size: 14px;
+  }
+
+  .btn__quote {
+    margin: 0px 4px;
+  }
+
+  .socialMedia {
+    margin: 0px 4px;
+  }
+
+  /*PORTADA - COVER*/
+
+  .cover {
+    max-width: 960px;
+  }
+
+  .text__cover {
+    padding-right: 20px;
+  }
+  .text__cover h1 {
+    font-size: 40px;
+  }
+
+  .image__cover img {
+    width: 450px;
+  }
+
+  .image__about img {
+    width: 250px;
+  }
+}
+
+/*Media query 960px*/
+
+@media screen and (max-width: 960px) {
+  /*HEADER - MENU*/
+
+  .bars__menu {
+    display: block;
+  }
+
+  .container__header,
+  .about {
+    max-width: 768px;
+  }
+
+  .menu {
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: -420px;
+    padding-top: 100px;
+    padding-right: 200px;
+    padding-left: 60px;
+    background: white;
+    flex-direction: column;
+    box-shadow: 10px 0px 40px -20px rgba(0, 0, 0, 0.2);
+    transition: all 300ms;
+  }
+
+  .menu__active {
+    left: 0;
+  }
+
+  .menu nav {
+    margin-left: -60px;
+  }
+
+  .menu nav ul {
+    flex-direction: column;
+  }
+
+  .menu nav ul li {
+    margin: 8px 0px;
+  }
+
+  .menu nav ul li a {
+    font-size: var(--lowText_font_size);
+  }
+
+  .btn__quote {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  /*PORTADA - COVER*/
+
+  .cover {
+    max-width: 768px;
+  }
+
+  .text__cover {
+    padding-right: 20px;
+  }
+  .text__cover h1 {
+    font-size: 30px;
+  }
+
+  .text__cover p {
+    font-size: 14px;
+  }
+
+  .btn__text {
+    font-size: 14px;
+  }
+
+  .image__cover img {
+    width: 350px;
+  }
+
+  /*SOBRE NOSOTROS - ABOUT*/
+
+  .text__about h1 {
+    font-size: 30px;
+  }
+
+  .text__about p {
+    font-size: 14px;
+  }
+
+  .image__about img {
+    width: 200px;
+  }
+
+  /*FORMULARIO DE CONTACTO*/
+
+  .container__contact {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    background: var(--background-color);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /*HEADER - MENU*/
+
+  .logo img {
+    width: 180px;
+  }
+
+  /*PORTADA - COVER*/
+
+  .cover {
+    margin-top: 40px;
+    max-width: 600px;
+    flex-direction: column;
+  }
+
+  .image__cover img {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  /*SOBRE NOSOTROS - ABOUT*/
+
+  .about {
+    max-width: 480px;
+    flex-direction: column;
+  }
+
+  .text__about {
+    width: 100%;
+    padding-right: 0px;
+  }
+
+  .image__about {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+
+  .image__about img {
+    min-width: 150px;
+  }
+
+  /*FORMULARIO DE CONTACTO*/
+
+  .name__email,
+  .subject__telephone {
+    flex-direction: column;
+  }
+
+  .form__contact input[type="text"],
+  .form__contact input[type="email"] {
+    width: 100%;
+  }
+}

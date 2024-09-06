@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--==================== METADATOS ====================-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="HTML-CSS-JS">
+    <meta name="author" content="Rocio Cuello">
+
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!--==================== TITULO ====================-->
+    <title>LandingPages | Landing Page Starbucks</title>
+
+    <!--==================== ICONO DE PESTAÑA ====================-->
+    <link rel="icon" sizes="64x64" href="assets/img/favicon.webp"> 
+
+     <!--==================== ICONO ====================-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#" class="logo"><img src="assets/img/logo.png" alt=""></a>
+            <div class="toggle" onclick="toggleMenu();"></div>
+            <ul class="navigation">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Menú</a></li>
+                <li><a href="#">Novedades</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>No es solo café <br>Es <span>Starbucks</span></h2>
+                <p>El olor al café, a unos granos recién tostados, es la mejor bienvenida que cada día planificamos para brindarles cuando abrimos las puertas de nuestras tiendas. Pero eso es solo el comienzo.</p>
+                <a href="#">Leer Más</a>
+            </div>
+            <div class="imgBox">
+                <img src="assets/img/img1.png" class="starbucks">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="assets/img/thumb1.png" onclick="imgSlider('assets/img/img1.png');changeCircleColor('#017143')"></li>
+            <li><img src="assets/img/thumb2.png" onclick="imgSlider('assets/img/img2.png');changeCircleColor('#eb7495')"></li>
+            <li><img src="assets/img/thumb3.png" onclick="imgSlider('assets/img/img3.png');changeCircleColor('#d752b1')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="assets/img/facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="assets/img/instagram.png" alt=""></a></li>
+            <li><a href="#"><img src="assets/img/twitter.png" class="twitter"></a></li>
+        </ul>
+    </section>
+    <!--==================== SCRIPT ====================-->
+    <script>
+        function imgSlider(anything){
+            document.querySelector('.starbucks').src=anything;
+        }
+        function changeCircleColor(color){
+            const circle=document.querySelector('.circle');
+            circle.style.background=color;
+        }
+        function toggleMenu(){
+            var menuToggle=document.querySelector('.toggle');
+            var navigation=document.querySelector('.navigation');
+            menuToggle.classList.toggle('active')
+            navigation.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>

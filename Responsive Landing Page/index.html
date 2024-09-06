@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+  <!--==================== METADATOS ====================-->
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <meta name="description" content="LandingPages">
+      <meta name="keywords" content="HTML-CSS-JS">
+      <meta name="author" content="Rocio Cuello">
+      
+      <!--==================== CSS ====================-->
+      <link rel="stylesheet" href="assets/css/style.css">
+
+      <!--==================== TITULO ====================-->
+      <title>LandingPages | Responsive landing page</title>
+
+      <!--==================== ICONO DE PESTAÑA ====================-->
+      <link rel="icon" sizes="64x64" href="assets/img/favicon.webp"> 
+
+      <!--=============== FONT AWESOME ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+      <!--=============== REMIX ICONS ===============-->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+      
+      <!--=============== SWIPER CSS ===============-->
+      <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    </head>
+
+  <body>
+     <!--==================== HEADER ====================-->
+     <header class="header" id="header">
+      <nav class="nav container">
+          <a href="#" class="nav__logo">
+              <img src="assets/img/logo.png" class="nav__logo-img" alt="">
+              Bingles.
+          </a>
+
+          <div class="nav__menu" id="nav-menu">
+              <ul class="nav__list">
+                  <li class="nav__item">
+                      <a href="#home" class="nav__link active-link">Inicio</a>
+                  </li>
+                  <li class="nav__item">
+                      <a href="#features" class="nav__link">Características</a>
+                  </li>
+                  <li class="nav__item">
+                      <a href="#pricing" class="nav__link">Precios</a>
+                  </li>
+                  <li class="nav__item">
+                      <a href="#team" class="nav__link">Equipo</a>
+                  </li>
+                  <li class="nav__item">
+                      <a href="#faq" class="nav__link">Faq</a>
+                  </li>
+                  <li class="nav__item">
+                      <a href="#contact" class="nav__link">Contacto</a>
+                  </li>
+              </ul>
+              <div class="nav__close" id="nav-close">
+                  <i class="fas fa-times"></i>
+              </div>
+          </div>
+          <div class="nav__toggle" id="nav-toggle">
+              <i class="fas fa-th-large"></i>
+          </div>
+      </nav>
+  </header>
+  
+  <!--==================== HOME ====================-->
+  <section class="home" id="home">
+      <div class="home__container container grid">
+          <div class="home__data">
+              <h1 class="home__title">
+                  <span>Landing</span> page para tu <span>app</span> soñada
+              </h1>
+              <p class="home__description">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi voluptates nesciunt, totam esse officia molestias.
+              </p>
+              <a href="#" class="button button--flex">
+                Explorar <i class="ri-arrow-right-down-line button__icon"></i>
+              </a>
+          </div>
+
+          <div class="home__img image">
+              <div class="banner__app__mock">
+                  <img src="assets/img/mobile-mock.png" class="mockup" alt="">
+                  <img src="assets/img/banner-app.jpg" class="main__img" alt="">
+              </div>
+              <div class="mobile__graphic">
+                  <img src="assets/img/mobile-graphic.png" alt="">
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!--==================== FEATURES ====================-->
+  <section class="features section" id="features">
+      <h2 class="section__title">Características de la App</h2>
+      <div class="feature__container container grid">
+          <div class="feature__img image">
+              <div class="banner__app__mock">
+                  <img src="assets/img/mobile-mock.png" class="mockup" alt="">
+                  <img src="assets/img/feature-app.jpg" class="main__img" alt="">
+              </div>
+              <div class="mobile__graphic">
+                  <img src="assets/img/mobile-graphic.png" alt="">
+              </div>
+          </div>
+
+          <div class="feature__inside">
+              <ul>
+                  <li>
+                      <img src="assets/img/feature1.png" alt="">
+                      <h3>Mejor Pantalla de App</h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate et atque consectetur voluptatibus id quibusdam.</p>
+                  </li>
+                  <li>
+                      <img src="assets/img/feature2.png" alt="">
+                      <h3>Gran Diseño UI</h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate et atque consectetur voluptatibus id quibusdam.</p>
+                  </li>
+                  <li>
+                      <img src="assets/img/feature3.png" alt="">
+                      <h3>Mejor Diseño UX</h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate et atque consectetur voluptatibus id quibusdam.</p>
+                  </li>
+              </ul>
+              <div class="btn__group">
+                  <a href="#" class="button"><i class="fab fa-apple fa-2x"></i>Disponible Para<br> Apple</a>
+                  <a href="#" class="button"><i class="fab fa-google-play fa-2x"></i>Disponible Para <br> Android</a>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!--==================== PRICING ====================-->
+  <section class="pricing section" id="pricing">
+      <h2 class="section__title">Nuestro Plan de Precios</h2>
+      <div class="pricing__container container grid">
+          <div class="pricing__plan">
+              <div class="pricing__header">
+                <h3>Básico</h3>
+              </div>
+              <div class="pricing__price">
+                  <span class="currency">$</span>
+                  <span class="price">99</span>
+                  <span class="period">/mensual</span>
+              </div>
+              <div class="pricing__body">
+                  <ul>
+                      <li><i class="fa fa-check"></i>Ancho de banda de 5 GB</li>
+                      <li><i class="fa fa-check"></i>Actualización Gratuita</li>
+                      <li><i class="fa fa-check"></i>Impresión de Alta Resolución</li>
+                      <li><i class="fa fa-check"></i>Branding</li>
+                      <li><i class="fa fa-check"></i>Otras Grandes Características</li>
+                  </ul>
+              </div>
+              <div class="pricing__footer">
+                  <a href="#" class="button button--flex">
+                      Explorar <i class="ri-arrow-right-down-line button__icon"></i>
+                  </a>
+              </div>
+          </div>
+
+          <div class="pricing__plan">
+              <div class="pricing__header">
+                  <h3>premium</h3>
+                  <h3 class="best__value">Mejor Valor</h3>
+              </div>
+              <div class="pricing__price">
+                  <span class="currency">$</span>
+                  <span class="price">199</span>
+                  <span class="period">/mensual</span>
+              </div>
+              <div class="pricing__body">
+                  <ul>
+                    <li><i class="fa fa-check"></i>Ancho de banda de 5 GB</li>
+                    <li><i class="fa fa-check"></i>Actualización Gratuita</li>
+                    <li><i class="fa fa-check"></i>Impresión de Alta Resolución</li>
+                    <li><i class="fa fa-check"></i>Branding</li>
+                    <li><i class="fa fa-check"></i>Otras Grandes Características</li>
+                  </ul>
+              </div>
+              <div class="pricing__footer">
+                  <a href="#" class="button button--flex">
+                      Explorar <i class="ri-arrow-right-down-line button__icon"></i>
+                  </a>
+              </div>
+          </div>
+
+          <div class="pricing__plan">
+              <div class="pricing__header">
+                  <h3>ultimate</h3>
+              </div>
+              <div class="pricing__price">
+                  <span class="currency">$</span>
+                  <span class="price">299</span>
+                  <span class="period">/mensual</span>
+              </div>
+              <div class="pricing__body">
+                  <ul>
+                    <li><i class="fa fa-check"></i>Ancho de banda de 5 GB</li>
+                    <li><i class="fa fa-check"></i>Actualización Gratuita</li>
+                    <li><i class="fa fa-check"></i>Impresión de Alta Resolución</li>
+                    <li><i class="fa fa-check"></i>Branding</li>
+                    <li><i class="fa fa-check"></i>Otras Grandes Características</li>
+                  </ul>
+              </div>
+              <div class="pricing__footer">
+                  <a href="#" class="button button--flex">
+                      Explorar <i class="ri-arrow-right-down-line button__icon"></i>
+                  </a>
+              </div>
+          </div>
+      </div>
+  </section>
+  
+  <!--==================== TESTIMONIALS ====================-->
+  <section class="testimonials section" id="team">
+      <h2 class="section__title">Conoce al Equipo</h2>
+      <div class="testimonials__container container">
+          <div class="swiper testimonials__swiper">
+              <div class="swiper-wrapper">
+                  <div class="testimonial__item swiper-slide">
+                      <div class="img__box">
+                          <img src="assets/img/team1.jpg" alt="">
+                      </div>
+                      <h3>upvesh kumar</h3>
+                      <span>Diseñador UI</span>
+                      <ul>
+                          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                          <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                      </ul>
+                  </div>
+
+                  <div class="testimonial__item swiper-slide">
+                      <div class="img__box">
+                          <img src="assets/img/team2.jpg" alt="">
+                      </div>
+                      <h3>upvesh kumar</h3>
+                      <span>Diseñador UI</span>
+                      <ul>
+                          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                          <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                      </ul>
+                  </div>
+
+                  <div class="testimonial__item swiper-slide">
+                      <div class="img__box">
+                          <img src="assets/img/team3.jpg" alt="">
+                      </div>
+                      <h3>upvesh kumar</h3>
+                      <span>Diseñador UIr</span>
+                      <ul>
+                          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                          <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                      </ul>
+                  </div>
+
+                  <div class="testimonial__item swiper-slide">
+                      <div class="img__box">
+                          <img src="assets/img/team2.jpg" alt="">
+                      </div>
+                      <h3>upvesh kumar</h3>
+                      <span>Diseñador UI</span>
+                      <ul>
+                          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                          <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!--==================== FAQ'S ====================-->
+  <section class="accordion section" id="faq">
+      <h2 class="section__title">Preguntas Frecuentes (FAQ)</h2>
+      <div class="accordion__container container grid">
+          <div class="accordion__img image">
+              <div class="banner__app__mock">
+                  <img src="assets/img/mobile-mock.png" class="mockup" alt="">
+                  <img src="assets/img/banner-app.jpg" class="main__img" alt="">
+              </div>
+              <div class="mobile__graphic">
+                  <img src="assets/img/mobile-graphic.png" alt="">
+              </div>
+          </div>
+
+          <div class="accordion__content">
+              <div class="accordion__item">
+                  <div class="accordion__header">
+                      <h3>100% Responsivo - Se adapta perfectamente a cualquier dispositivo</h3>
+                  </div>
+                  <div class="accordion__body">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, omnis similique doloremque quo ea provident odit incidunt? Obcaecati, unde inventore.</p>
+                  </div>
+              </div>
+
+              <div class="accordion__item collapsed">
+                  <div class="accordion__header">
+                      <h3>Código Limpio</h3>
+                  </div>
+                  <div class="accordion__body">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, omnis similique doloremque quo ea provident odit incidunt? Obcaecati, unde inventore.</p>
+                  </div>
+              </div>
+
+              <div class="accordion__item">
+                  <div class="accordion__header">
+                      <h3>Diseño plano, moderno y limpio</h3>
+                  </div>
+                  <div class="accordion__body">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, omnis similique doloremque quo ea provident odit incidunt? Obcaecati, unde inventore.</p>
+                  </div>
+              </div>
+
+              <div class="accordion__item">
+                  <div class="accordion__header">
+                      <h3>Soporte para fuentes personalizadas</h3>
+                  </div>
+                  <div class="accordion__body">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, omnis similique doloremque quo ea provident odit incidunt? Obcaecati, unde inventore.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!--==================== FOOTER ====================-->
+  <section class="contact section container" id="contact">
+      <div class="contact__container grid">
+          <div class="contact__box">
+              <h2 class="section__title">
+                Contáctanos hoy<br>
+                a través de cualquiera de los
+                medios <br> proporcionados 
+              </h2>
+              <div class="contact__data">
+                  <div class="contact__information">
+                      <h3 class="contact__subtitle">Llámanos para soporte inmediato</h3>
+                      <span class="contact__description">
+                          <i class="ri-phone-line contact__icon"></i>
+                          +54 351 123456
+                      </span>
+                  </div>
+                  <div class="contact__information">
+                      <h3 class="contact__subtitle">Escribe tu mail</h3>
+                      <span class="contact__description">
+                          <i class="ri-mail-line contact__icon"></i>
+                          user@gmail.com
+                      </span>
+                  </div>
+              </div>
+          </div>
+          <form action="" class="contact__form">
+              <div class="contact__inputs">
+                  <div class="contact__content">
+                      <input type="email" placeholder="" class="contact__input">
+                      <label for="" class="contact__label">Email</label>
+                      <span></span>
+                  </div>
+                  <div class="contact__content">
+                      <input type="text" placeholder="" class="contact__input">
+                      <label for="" class="contact__label">Asunto</label>
+                      <span></span>
+                  </div>
+                  <div class="contact__content contact__area">
+                      <textarea name="message" placeholder="" id="" cols="30" rows="10" class="contact__input"></textarea>
+                      <label for="" class="contact__label">Mensaje</label>
+                      <span></span>
+                  </div>
+              </div>
+              <button class="button button--flex">
+                  Enviar Mensaje
+                  <i class="ri-arrow-right-up-line button__icon"></i>
+              </button>
+          </form>
+      </div>
+  </section>
+
+  <!--==================== FOOTER ====================-->
+  <footer class="footer section">
+      <div class="footer__container container grid">
+          <div class="footer__content">
+              <a href="#" class="footer__logo">
+                  <img src="assets/img/logo.png" class="footer__logo-img" alt="">
+                  Bingles
+              </a>
+              <h3 class="footer__title">
+                Suscríbete a nuestro boletín<br> para mantenerte actualizado
+              </h3>
+              <div class="footer__subscribe">
+                  <input type="email" placeholder="Escribe tu mail" class="footer__input">
+                  <button class="button button--flex footer__button">
+                    Suscribirse
+                      <i class="ri-arrow-right-up-line button__icon"></i>
+                  </button>
+              </div>
+          </div>
+          <div class="footer__content">
+              <h3 class="footer__title">Nuestra Dirección</h3>
+              <ul class="footer__data">
+                  <li class="footer__information">12354 - RWP </li>
+                  <li class="footer__information">gali - 423</li>
+                  <li class="footer__information">234 - 567 - 788</li>
+              </ul>
+          </div>
+          <div class="footer__content">
+              <h3 class="footer__title">Contáctenos</h3>
+              <ul class="footer__data">
+                  <li class="footer__information">+999 666 555</li>
+                  <div class="footer__social">
+                      <a href="#" class="footer__social-link">
+                          <i class="ri-facebook-fill"></i>
+                      </a>
+                      <a href="#" class="footer__social-link">
+                          <i class="ri-instagram-line"></i>
+                      </a>
+                      <a href="#" class="footer__social-link">
+                          <i class="ri-twitter-fill"></i>
+                      </a>
+                  </div>
+              </ul>
+          </div>
+          <div class="footer__content">
+              <h3 class="footer__title">Nuestros Servicios</h3>
+              <ul class="footer__data">
+                  <li class="footer__information">Precios</li>
+                  <li class="footer__information">Características</li>
+                  <li class="footer__information">Preguntas Frecuentes (FAQ)</li>
+              </ul>
+          </div>
+      </div>
+      <p class="footer__copy">&#169; Rocio. Todos los derechos reservados</p>
+  </footer>
+
+  <!--=============== SWIPER JS ===============-->
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  
+       <!--==================== script ====================-->
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

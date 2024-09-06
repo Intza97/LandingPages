@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--==================== METADATOS ====================-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="LandingPages">
+    <meta name="keywords" content="HTML-CSS-JS">
+    <meta name="author" content="Rocio Cuello">
+
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!--==================== TITULO ====================-->
+    <title>LandingPages | Landing Page Netflix</title>
+
+    <!--==================== ICONO DE PESTAÑA ====================-->
+    <link rel="icon" sizes="64x64" href="assets/img/favicon.webp"> 
+
+    <!--==================== ICONO ====================-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body> 
+    <!--==================== HEADER ====================-->
+   <header>
+    <a href="#" class="logo"><img src="assets/img/logo.png" alt=""></a>
+    <ul class="navigation">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Programas de TV</a></li>
+        <li><a href="#">Películas</a></li>
+        <li><a href="#">Lo Último</a></li>
+        <li><a href="#">Mi Lista</a></li>
+    </ul>
+    <div class="search">
+        <input type="search" placeholder="Search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+   </header>
+    <!--==================== BANNER ====================-->
+   <div class="banner">
+    <img src="assets/img/bg.jpg" alt="" class="bg">
+    <div class="content">
+        <img src="assets/img/name.png" alt="" class="movieTitle">
+        <h4>
+            <span>2020</span>
+            <span><i>12+</i></span>
+            <span>1h 55min</span>
+            <span>Acción</span>
+        </h4>
+        <p>Mulán, una joven valiente arriesga todo, por amor a su familia y a su país, para convertirse en una de las más grandes guerreras que China haya conocido.Cuando el Emperador de China decreta que un hombre de cada familia debe servir en el Ejército Imperial para defender al país de los invasores del Norte, Hua Mulán, la hija mayor de un honrado guerrero, toma el lugar de su padre que se encuentra enfermo. Vestida de hombre emprende  un viaje épico que la transformará en una guerrera honrada y respetada por toda una nación agradecida… y un padre orgulloso.</p>
+        <div class="buttons">
+            <a href="#"><i class="fa-solid fa-play"></i> Reproducir</a>
+            <a href="#"><i class="fa-solid fa-plus"></i> Mis Listas</a>
+        </div>
+    </div>
+    <a class="play" onclick="toggleVideo();"><img src="assets/img/play.png" alt="">Ver Tráiler</a>
+   </div>
+    <!--==================== TRAILER ====================-->
+   <div class="trailer">
+        <video src="assets/video/trailer.mp4" controls="true" autoplay="true"></video>
+        <img src="assets/img/close.png" onclick="toggleVideo();" class="close">
+    </div>
+    <!--==================== SCRIPT ====================-->
+   <script>
+    function toggleVideo(){
+        const trailer=document.querySelector('.trailer');
+        const video=document.querySelector('video');
+        trailer.classList.toggle('active')
+        video.currentTime=0;
+        video.pause();
+    }
+   </script>
+</body>
+</html>
