@@ -60,7 +60,7 @@ header {
 }
 
 .logo img {
-  width: 200px;
+  width: 60px;
 }
 
 .menu {
@@ -577,7 +577,9 @@ footer {
   font-weight: 500;
   padding-bottom: 20px;
 }
-
+.box__footer a img{
+  width: 60px !important;
+}
 .box__footer a {
   margin-top: 6px;
   color: var(--color_text-tertiary);
